@@ -1,0 +1,106 @@
+html {
+  font-size: 10px;
+  background: url(images/milky-way.jpeg) bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .3rem solid rgba(83, 86, 241, 0.5);
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(90, 89, 89, 0.198);
+  text-shadow: 0 0 .5rem black;
+  box-shadow: 0 0 2rem .1rem rgba(141, 241, 83, 0.657);
+}
+
+.playing {
+  transform: scale(1.2);
+  border-color:rgba(141, 241, 83, 0.411);
+  box-shadow: 0 0 2rem .1rem rgba(141, 241, 83, 0.411);
+  color: rgba(160, 243, 51, 0.438);
+  background: rgba(141, 241, 83, 0.157);
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #00f7ff;
+}
+
+
+.hexagon {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  background-color: #ffffff0a;
+  margin: 28.87px 0;
+  box-shadow: 0 0 20px rgba(0,255,0,0.55);
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 89.71px;
+  height: 75.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.774) rotate(-45deg);
+  background-color: inherit;
+  left: 11.6447px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.55);
+}
+
+.hexagon:before {
+  top: -35.3553px;
+  border-top: solid 2.8284px #333333;
+  border-right: solid 2.8284px #333333;
+}
+
+.hexagon:after {
+  bottom: -35.3553px;
+  border-bottom: solid 2.8284px #333333;
+  border-left: solid 2.8284px #333333;
+}
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top:1.1547005383792515px;
+  left: 0;
+  width:96px;
+  height:55.4256px;
+  z-index: 2;
+  background: inherit;
+}www.canva.com)
